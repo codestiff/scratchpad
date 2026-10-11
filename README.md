@@ -13,3 +13,5 @@ Expected site URL once Pages is enabled: https://codestiff.github.io/scratchpad/
 - Earlier: `mockups/board-v1/` — owner inbox, work queue, and outcomes.
 
 Both are self-contained, mobile-friendly HTML prototypes. All statuses, claims, decisions, project associations, dependencies, and counts are illustrative. No live repository integration, approvals, or session creation occurs. No build or package installation is required.
+
+Shared data integration: `mockups/board-v3/` renders a Python-generated illustrative snapshot. It contains no live private records. The CLI can render the identical file with `board.py milestones --snapshot-file snapshot.json --text`.

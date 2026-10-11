@@ -1,0 +1,463 @@
+{
+  "records": [
+    {
+      "cite": "plan/004",
+      "kind": "plan",
+      "id": "004",
+      "title": "Plan 4",
+      "path": "done/004-p.md",
+      "state": "done",
+      "live": false,
+      "seat": "core",
+      "milestone": "milestones/first",
+      "dependencies": [],
+      "blockers": [],
+      "owner_actions": [],
+      "readiness": "terminal",
+      "claim": null,
+      "rank": null,
+      "rank_reasons": []
+    },
+    {
+      "cite": "milestones/first",
+      "kind": "milestone",
+      "id": "first",
+      "title": "a record",
+      "path": "milestones/first.md",
+      "state": "open",
+      "live": true,
+      "seat": "owner",
+      "milestone": null,
+      "dependencies": [],
+      "blockers": [],
+      "owner_actions": [
+        "owner is the next responsible seat"
+      ],
+      "readiness": "ready",
+      "claim": null,
+      "rank": 0,
+      "rank_reasons": []
+    },
+    {
+      "cite": "plans/001",
+      "kind": "plan",
+      "id": "001",
+      "title": "Plan 1",
+      "path": "plans/001-p.md",
+      "state": "active",
+      "live": true,
+      "seat": "core",
+      "milestone": "milestones/first",
+      "dependencies": [],
+      "blockers": [],
+      "owner_actions": [
+        "answer: Which material?"
+      ],
+      "readiness": "ready",
+      "claim": null,
+      "rank": 0,
+      "rank_reasons": []
+    },
+    {
+      "cite": "plans/002",
+      "kind": "plan",
+      "id": "002",
+      "title": "Plan 2",
+      "path": "plans/002-p.md",
+      "state": "active",
+      "live": true,
+      "seat": "core",
+      "milestone": "milestones/first",
+      "dependencies": [
+        "plans/001"
+      ],
+      "blockers": [
+        "plans/001"
+      ],
+      "owner_actions": [],
+      "readiness": "blocked",
+      "claim": null,
+      "rank": null,
+      "rank_reasons": []
+    },
+    {
+      "cite": "plans/003",
+      "kind": "plan",
+      "id": "003",
+      "title": "Plan 3",
+      "path": "plans/003-p.md",
+      "state": "active",
+      "live": true,
+      "seat": "core",
+      "milestone": "milestones/first",
+      "dependencies": [
+        "plans/001",
+        "plans/002"
+      ],
+      "blockers": [
+        "plans/001",
+        "plans/002"
+      ],
+      "owner_actions": [],
+      "readiness": "blocked",
+      "claim": null,
+      "rank": null,
+      "rank_reasons": []
+    }
+  ],
+  "plans": [
+    {
+      "cite": "plan/004",
+      "milestone": "milestones/first",
+      "state": "done",
+      "title": "Plan 4",
+      "steps": [
+        {
+          "n": "1",
+          "name": "Step 1",
+          "seat": "core",
+          "size": "S",
+          "completed": true,
+          "evidence": [
+            {
+              "commit": "cbb7ca9c9baa10e925f1ccc5e642a5a7849e77b8",
+              "date": "2026-10-02",
+              "seat": null
+            }
+          ]
+        }
+      ],
+      "approved": true,
+      "live": false,
+      "scope_known": true,
+      "questions": [],
+      "totals": {
+        "known": 1,
+        "completed": 1,
+        "remaining": 0
+      },
+      "stalled": false,
+      "last": "2026-10-02",
+      "unlisted_proofs": []
+    },
+    {
+      "cite": "plans/001",
+      "milestone": "milestones/first",
+      "state": "active",
+      "title": "Plan 1",
+      "steps": [
+        {
+          "n": "1",
+          "name": "Step 1",
+          "seat": "core",
+          "size": "S",
+          "completed": true,
+          "evidence": [
+            {
+              "commit": "cbb7ca9c9baa10e925f1ccc5e642a5a7849e77b8",
+              "date": "2026-10-02",
+              "seat": null
+            }
+          ]
+        },
+        {
+          "n": "2",
+          "name": "Step 2",
+          "seat": "core",
+          "size": "S",
+          "completed": false,
+          "evidence": []
+        },
+        {
+          "n": "3",
+          "name": "Step 3",
+          "seat": "core",
+          "size": "S",
+          "completed": false,
+          "evidence": []
+        },
+        {
+          "n": "4",
+          "name": "Step 4",
+          "seat": "core",
+          "size": "S",
+          "completed": false,
+          "evidence": []
+        },
+        {
+          "n": "5",
+          "name": "Step 5",
+          "seat": "core",
+          "size": "S",
+          "completed": false,
+          "evidence": []
+        }
+      ],
+      "approved": true,
+      "live": true,
+      "scope_known": true,
+      "questions": [
+        "Which material?"
+      ],
+      "totals": {
+        "known": 5,
+        "completed": 1,
+        "remaining": 4
+      },
+      "stalled": false,
+      "last": "2026-10-02",
+      "unlisted_proofs": []
+    },
+    {
+      "cite": "plans/002",
+      "milestone": "milestones/first",
+      "state": "active",
+      "title": "Plan 2",
+      "steps": [
+        {
+          "n": "1",
+          "name": "Step 1",
+          "seat": "core",
+          "size": "S",
+          "completed": false,
+          "evidence": []
+        }
+      ],
+      "approved": true,
+      "live": true,
+      "scope_known": true,
+      "questions": [],
+      "totals": {
+        "known": 1,
+        "completed": 0,
+        "remaining": 1
+      },
+      "stalled": true,
+      "last": "2026-10-01",
+      "unlisted_proofs": []
+    },
+    {
+      "cite": "plans/003",
+      "milestone": "milestones/first",
+      "state": "active",
+      "title": "Plan 3",
+      "steps": [
+        {
+          "n": "1",
+          "name": "Step 1",
+          "seat": "core",
+          "size": "S",
+          "completed": false,
+          "evidence": []
+        }
+      ],
+      "approved": true,
+      "live": true,
+      "scope_known": true,
+      "questions": [],
+      "totals": {
+        "known": 1,
+        "completed": 0,
+        "remaining": 1
+      },
+      "stalled": true,
+      "last": "2026-10-01",
+      "unlisted_proofs": []
+    }
+  ],
+  "milestones": [
+    {
+      "cite": "milestones/first",
+      "title": "a record",
+      "state": "open",
+      "product": null,
+      "sentence": "what it means",
+      "serves": null,
+      "due": "2026-11-01",
+      "record_totals": {
+        "total": 4,
+        "open": 3,
+        "done": 1,
+        "blocked": 2
+      },
+      "plan_totals": {
+        "total": 4,
+        "completed": 1,
+        "remaining": 3
+      },
+      "step_totals": {
+        "known": 8,
+        "completed": 2,
+        "remaining": 6
+      },
+      "completion_percent": 25.0,
+      "known_scope_percent": 25.0,
+      "scope_unknown_plans": [],
+      "owner_blockers": [
+        {
+          "cite": "plans/001",
+          "reasons": [
+            "answer: Which material?"
+          ],
+          "affected_records": [
+            "plans/001",
+            "plans/002",
+            "plans/003"
+          ]
+        }
+      ],
+      "owner_blocked_records": [
+        "plans/001",
+        "plans/002",
+        "plans/003"
+      ],
+      "owner_blocked_record_count": 3,
+      "owner_action_count": 1,
+      "gate": {
+        "description": null,
+        "reading": null,
+        "value": null,
+        "target": null,
+        "unavailable_reason": null
+      }
+    }
+  ],
+  "owner_inbox": [
+    {
+      "cite": "milestones/first",
+      "reasons": [
+        "owner is the next responsible seat"
+      ]
+    },
+    {
+      "cite": "plans/001",
+      "reasons": [
+        "answer: Which material?"
+      ]
+    }
+  ],
+  "orphan_step_proofs": [],
+  "claims_note": "the remote 'origin' was not reachable; claims read from its last fetch",
+  "schema_version": 1,
+  "provenance": {
+    "revision": "0162e04bca570fbf700045bf873c27d891a13425",
+    "evaluated_at": "2026-10-11T04:13:09.626366+00:00",
+    "completion_ref": "main",
+    "completion_revision": "0162e04bca570fbf700045bf873c27d891a13425",
+    "worktree_dirty": false,
+    "history_quality": "approximate",
+    "completion_quality": "main-ancestry",
+    "preview": false,
+    "reporting_timezone": "UTC",
+    "config_path": "ops/records.toml"
+  },
+  "coverage": {
+    "missing_roots": [
+      "closed/",
+      "defects/",
+      "fable/",
+      "feedback/",
+      "jobs/",
+      "requests/",
+      "runs/",
+      "stops/"
+    ],
+    "invalid_records": [],
+    "legacy_records": []
+  },
+  "history": {
+    "quality": "approximate",
+    "reason": "UTC committer-day observations on first-parent main ancestry; not verified landing time. Definitions are historical; external repository scope is unavailable.",
+    "points": [
+      {
+        "date": "2026-10-01",
+        "revision": "cf1c72bd3ece4b442a37c7c350815321d59a40ce",
+        "milestones": [
+          {
+            "cite": "milestones/first",
+            "plan_totals": {
+              "total": 4,
+              "completed": 0,
+              "remaining": 4
+            },
+            "step_totals": {
+              "known": 5,
+              "completed": 0,
+              "remaining": 5
+            },
+            "completion_percent": 0.0,
+            "known_scope_percent": 0.0,
+            "scope_unknown_plans": []
+          }
+        ]
+      },
+      {
+        "date": "2026-10-02",
+        "revision": "cbb7ca9c9baa10e925f1ccc5e642a5a7849e77b8",
+        "milestones": [
+          {
+            "cite": "milestones/first",
+            "plan_totals": {
+              "total": 4,
+              "completed": 1,
+              "remaining": 3
+            },
+            "step_totals": {
+              "known": 5,
+              "completed": 2,
+              "remaining": 3
+            },
+            "completion_percent": 40.0,
+            "known_scope_percent": 40.0,
+            "scope_unknown_plans": []
+          }
+        ]
+      },
+      {
+        "date": "2026-10-03",
+        "revision": "0162e04bca570fbf700045bf873c27d891a13425",
+        "milestones": [
+          {
+            "cite": "milestones/first",
+            "plan_totals": {
+              "total": 4,
+              "completed": 1,
+              "remaining": 3
+            },
+            "step_totals": {
+              "known": 8,
+              "completed": 2,
+              "remaining": 6
+            },
+            "completion_percent": 25.0,
+            "known_scope_percent": 25.0,
+            "scope_unknown_plans": []
+          }
+        ]
+      },
+      {
+        "date": "2026-10-04",
+        "revision": "0162e04bca570fbf700045bf873c27d891a13425",
+        "milestones": [
+          {
+            "cite": "milestones/first",
+            "plan_totals": {
+              "total": 4,
+              "completed": 1,
+              "remaining": 3
+            },
+            "step_totals": {
+              "known": 8,
+              "completed": 2,
+              "remaining": 6
+            },
+            "completion_percent": 25.0,
+            "known_scope_percent": 25.0,
+            "scope_unknown_plans": []
+          }
+        ]
+      }
+    ]
+  },
+  "example_notice": "Illustrative repository generated by the Python evaluator; not live fleet records."
+}
